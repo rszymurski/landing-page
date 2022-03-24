@@ -10,6 +10,14 @@ header, footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display:flex;
+    padding-inline-start: 0px;
+    gap: 25px;
+
 }
 
 .logo {
@@ -20,26 +28,34 @@ header, footer {
 
 
 .links {
-    display: flex;
-    justify-content: center;
-    align-self: center;
     list-style-type: none;
-    gap: 15px;
+}
+
+.links:hover {
+    text-decoration: underline;
 }
 
 .hero {
     display:flex;
     justify-content:space-around;
     padding: 50px;
-    flex: 1;
 }
 
 .hero-left {
    max-width: 25vw;
+   margin: 50px;
 }
 
 .hero-right {
     align-self: center;
+    margin: 50px;
+}
+
+.hero-image {
+    border: none;
+    width: 400px;
+    height:auto;
+    border-radius: 0px;
 }
 
 h2 {
@@ -53,35 +69,41 @@ h2 {
     font-weight: 700;
     color:#1F2937;
     text-align: center;
-    margin: 35px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px;    
 }
 
-img {
-    width: 150px;
-    height: 150px;
+.card-image {
+    height: 120px;
+    width: 120px;
     border: 3px #3882F6;
     border-style: solid;
     border-radius: 8px;
+    align-self: center;
 }
 
 .text {
-    font-size: 16px;
+    font-size: 14px;
     color:#1F2937;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 75px;
 }
 
-.links a,
+.links,
 .hero-left {
     font-size: 18px;
     color: #E5E7EB;
@@ -98,6 +120,12 @@ img {
     border: none;
     text-align: center;
     width: 120px;
+    transition-duration: 0.4s;
+}
+
+.signup:hover {
+    background-color:#F9FAF8;
+    color:#3882F6;
 }
 
 .inspire {
@@ -145,6 +173,12 @@ img {
     border-style:solid;
     padding: 10px;
     width: 120px;
+    transition-duration: 0.4s;
+}
+
+.call-signup:hover {
+    background-color: #F9FAF8;
+    color:#3882F6;
 }
 
 .footer {
